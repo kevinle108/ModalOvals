@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <p>DON'T CLICK ON THE EVEN NUMBERED CHECKBOXES!</p>
+    <div class="wrap">
+      <label><input id="c1" type="checkbox" class="oval">checkbox1</label>
+      <label><input id="c2" type="checkbox" class="oval">checkbox2</label>
+      <label><input id="c3" type="checkbox" class="oval">checkbox3</label>
+      <label><input id="c4" type="checkbox" class="oval">checkbox4</label>
+      <label><input id="c5" type="checkbox" class="oval">checkbox5</label>
+    </div>
+    
+    <div id="overlay"></div>
+    
+    <div id="modal" role="alertdialog" aria-labelledby="modalTitle" aria-describedby="modalText">
+      <h2 id="modalTitle">Confirm Selection</h2>
+      <p id="modalText">Do you want to keep this checked?</p>
+      <div class="modalButtonDiv">
+        <button class="button" id="yesButton">Yes</a>
+        <button class="button" id="noButton">No</a>
+      </div>
+    </div>
+    <script src="app.js"></script>    
+</body>
+</html>
